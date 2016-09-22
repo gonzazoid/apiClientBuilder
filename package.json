@@ -2,11 +2,10 @@
   "name": "apiClientBuilder",
   "version": "0.0.3",
   "description": "",
-  "main": "Release/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack -c --config webpack.config.js && cp build/index.js Release/",
-    "clean": "rm -rf build/*"
+    "build": "webpack -c --config webpack.config.js && cp build/index.js ./"
   },
   "author": "Timur Appaev alloaolla@gmail.com",
   "license": "MIT",
