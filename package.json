@@ -1,5 +1,5 @@
 {
-  "name": "webrequest",
+  "name": "apiClientBuilder",
   "version": "0.0.3",
   "description": "",
   "main": "Release/index.js",
