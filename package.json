@@ -1,0 +1,25 @@
+{
+  "name": "webrequest",
+  "version": "0.0.3",
+  "description": "",
+  "main": "Release/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -c --config webpack.config.js && cp build/index.js Release/",
+    "clean": "rm -rf build/*"
+  },
+  "author": "Timur Appaev alloaolla@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "ts-loader": "^0.8.0",
+    "tslint": "^2.5.0-dev.5",
+    "tslint-loader": "^1.0.1",
+    "typescript": "^1.8.0",
+    "webpack": "^1.13.0"
+  },
+  "dependencies": {
+  }
+}
