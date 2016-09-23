@@ -45,7 +45,7 @@ export let apiClientBuilder = function(obj: any, worker: Function, plan: string 
         }
     }else{
         // TODO check structure
-        tree = obj;
+        tree = Object.assign({}, obj);
     }
 
     let res = getProxy(worker);
