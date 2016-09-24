@@ -9,6 +9,8 @@ var baseConfig = {
         path: __dirname + '/build/',
         pathinfo: true,
         filename: '[name].js',
+        // library: 'apiClientBuilder',
+        libraryTarget: 'commonjs2'
     },
     tslint: {
         emitErrors: true,
