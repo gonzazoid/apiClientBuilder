@@ -8,7 +8,7 @@ var getProxy = function (worker: Function){
       get (target: any, key: string, proxy: any) {
         return is_string(target[key]) ? worker.bind(null, target[key]) : target[key];
       },
-      has (target: any, key: string) {
+      has (target: any, key: string): boolean {
         return key in target;
       },
       set (target: any, key: string, value: string, proxy: any): boolean{
