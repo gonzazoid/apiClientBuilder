@@ -52,7 +52,7 @@ export let apiClientBuilder = function(obj: any, worker: Function, plan: string 
     for(let i in tree){
         if(tree.hasOwnProperty(i)){
             switch(true){ // ){
-                case 'string' === typeof tree[i] || tree[i] instanceof String : 
+                case is_string(tree[i]): 
                     res[i] = tree[i];
                     break;
                 case 'object' === typeof tree[i]:
