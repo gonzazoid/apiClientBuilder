@@ -1,24 +1,20 @@
 {
   "name": "apiClientBuilder",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack -c --config webpack.config.js && cp build/index.js ./"
+    "build": "./node_modules/tslint/bin/tslint ./index.ts && ./node_modules/typescript/bin/tsc ./index.ts",
+    "build:example:tree": "./node_modules/tslint/bin/tslint ./examples/tree/index.ts && ./node_modules/typescript/bin/tsc ./examples/tree/index.ts",
+    "build:example:plain": "./node_modules/tslint/bin/tslint ./examples/plain/index.ts && ./node_modules/typescript/bin/tsc ./examples/plain/index.ts",
+    "clean": "find ./examples -name '*.js' -type f -delete"
   },
   "author": "Timur Appaev alloaolla@gmail.com",
   "license": "MIT",
   "devDependencies": {
-    "babel": "^6.5.2",
-    "babel-core": "^6.11.4",
-    "babel-loader": "^6.2.4",
-    "ts-loader": "^0.8.0",
-    "tslint": "^2.5.0-dev.5",
-    "tslint-loader": "^1.0.1",
-    "typescript": "^1.8.0",
-    "webpack": "^1.13.0"
+    "tslint": "^4.2.0",
+    "typescript": "^2.1.4"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
